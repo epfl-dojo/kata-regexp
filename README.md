@@ -24,6 +24,9 @@ Kata d'exploration des expressions régulières (RegExp)
 ## Exercices Pratiques
 
 ### Parser la source d'une page
+
+→ But: comprendre les groupes et "dealer" avec les accents
+
 Depuis la source d'une page de cadiwww (e.g. view-source:https://cadiwww.epfl.ch/listes?groupe=epfl-dojo), on veut générer un fichier JSON sous la forme:
 ```
 {
@@ -31,7 +34,5 @@ Depuis la source d'une page de cadiwww (e.g. view-source:https://cadiwww.epfl.ch
   "222222": "Joe King"
 }
 ```
-Quelle serait la regexp qui permettrait d'extraire, en une fois, le numéro sciper et le nom de la personne ?
 
-* But: comprendre les groupes et "dealer" avec les accents.
-<!-- sciper=([0-9]{1,})[^0-9]>([A-zÀ-ÿ- ]*) -->
+Quelle serait la regexp qui permettrait d'extraire, en une fois, le numéro sciper et le nom de la personne ? <!-- sciper=([0-9]{1,})[^0-9]>([A-zÀ-ÿ- ]*) -->
