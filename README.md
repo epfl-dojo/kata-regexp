@@ -31,4 +31,5 @@ Depuis la source d'une page de cadiwww (e.g. view-source:https://cadiwww.epfl.ch
   "222222": "Joe King"
 }
 ```
-
+* But: comprendre les groupes et "dealer" avec les accents.
+<!-- sciper=([0-9]{1,})[^0-9]>([A-zÀ-ÿ- ]*) -->
