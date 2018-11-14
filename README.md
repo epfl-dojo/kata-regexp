@@ -1,2 +1,24 @@
-# kata-regexp
+---
+
+   Note: ce "kata" est en cours d'élaboration, toutes propositions, idées, pull request, etc... seront très appréciées.
+
+---
+
+
+# Kata RegExp
 Kata d'exploration des expressions régulières (RegExp)
+
+## Intro
+
+* https://en.wikipedia.org/wiki/Regular_expression
+* https://github.com/ziishaned/learn-regex/blob/master/README-fr.md
+* https://regex101.com / https://regexr.com
+
+## Idées
+* Valider un numéro sciper 123456 ;
+* Valider des numéros d'inventaires, B123456, A789012, etc. ;
+* Valider un pseudonyme: peut contenir des lettres minuscules, des nombres, des underscores et des traits d'union. Doit avoir de 3 à 15 caractères ;
+* Selection group ;
+* Greedy / Non-Greedy ;
+
+
