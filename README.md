@@ -21,4 +21,14 @@ Kata d'exploration des expressions régulières (RegExp)
 * Selection group ;
 * Greedy / Non-Greedy ;
 
+## Exercices Pratiques
+
+### Parser la source d'une page
+Depuis la source d'une page de cadiwww (e.g. view-source:https://cadiwww.epfl.ch/listes?groupe=epfl-dojo), générer un fichier JSON sous la forme:
+```
+{
+  "111111": "Brandy D. Cantor",
+  "222222": "Joe King"
+}
+```
 
