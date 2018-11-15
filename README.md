@@ -24,6 +24,8 @@ Les sites comme [regex101](https://regex101.com) ou
 [regexr.com](https://regexr.com) permettent de tester de manière visuelle les 
 regex et apportent des explications utiles sur les motifs utilisés.
 
+ 💡 si vous avez un language de prédiléction pour appliquer des regex, utilisez-le pour ces exercices. Autrement, [regex101](https://regex101.com) est l'un des plus grand service de test de regex dans le mondre.
+
 
 ## Idées
 * Nombre pairs \<\d*[02468]+\> / Impaires \<\d*[13579]+\> [src](https://www.abracadabrapdf.net/ressources-et-tutos/abracadabragrep/grep-pour-indesign-detecter-chiffres-pairs-et-impairs/)
