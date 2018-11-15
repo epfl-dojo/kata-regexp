@@ -36,11 +36,48 @@ regex et apportent des explications utiles sur les motifs utilisés.
   
 # Exercices Pratiques
 
-## Validation d'un numéro d'inventaire
+Ces premiers exercices permettent de mieux comprendre le language des regex. Le
+fichier [dict.txt](assets/dict.txt) est à disposition pour appliquer les regexp
+proposées dans cet exercice.
+
+## Meta caractères
+
+Significations des meta-caractères:
+
+|Meta-caractère|Description|
+|:----:|----|
+|.|Un point coïncide avec n'importe quel caractère unique à part le retour à la ligne.|
+|[ ]|Classe de caractères. Coïncide avec n'importe quel caractère entre crochets.|
+|[^ ]|Négation de classe de caractère. Coïncide avec n'importe quel caractère qui n'est pas entre les crochets.|
+|*|Coïncide avec 0 ou plus répétitions du caractère précédent.|
+|+|Coïncide avec 1 ou plus répétitions du caractère précédent.|
+|?|Rend le caractère précédent optionnel.|
+|{n,m}|Accolades. Coïncide avec au moins "n" mais pas plus que "m" répétition(s) du caractère précédent.|
+|(xyz)|Groupe de caractères. Coïncide avec les caractères "xyz" dans l'ordre exact.|
+|&#124;|Alternation (ou). Coïncide soit avec le caractère avant ou après le symbole.|
+|&#92;|Échappe le prochain caractère. Cela permet de faire coïncider des caractères réservés tels que <code>[ ] ( ) { } . * + ? ^ $ \ &#124;</code>|
+|^|Coïncide avec le début de la chaîne de caractères (string).|
+|$|Coïncide avec la fin de la chaîne de caractères (string).|
+
+
+### Recherche de mots
+  1. Trouver un moyen (et une variante) de trouver les mots de 7 lettres dans la liste
+  1. Trouver les mots ne commençant pas par "Ma"
+  1. Trouver les mots avec un double "aa"
+  1. Trouver les mots commençant par "M", finissant par "o"
+  1. Trouver les mots commençant par "M", finissant par "o" et ayant un "la"
+  1. Trouver les noms ayant une majuscule dans le nom (pas uniquement au début)
+  1. Trouver les mots ne finissant pas par "'s"
+  1. ...
+  1. ...
 
 ## Validation d'une date au format jj-mm-aaaa
+Comment valider une date au format jj-mm-aaaa avec une expressions régulière ?
+ * Exemple de date valide: 01-02-1337
+ * Exemples de dates invalides: 01.02.1337 / 31-31-1337 / 42-01-1337 / 01-01-0001 / ab-cd-efgh
 
 ## Trouver les nombres pairs et impaires
+Comment trouver tous les nombres pairs d'une liste ? Et impaires ?
 
 ## Validation d'un pseudo
 
