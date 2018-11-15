@@ -8,14 +8,14 @@
 Kata d'exploration des expressions régulières (RegExp).
 
 ## Intro
-Tout comme `git` ou `bash`, les expressions régulières sont incontournable dans 
+Tout comme `git` ou `bash`, les expressions régulières sont incontournables dans 
 le monde de l'informatique. Le but de cet exercice est donc d'apprendre, par la 
-pratique, cet outil indispensable. Une rapide lecture des pages wikipedia 
+pratique, cet outil indispensable. Une rapide lecture des pages Wikipedia 
 [Française](https://fr.wikipedia.org/wiki/Expression_r%C3%A9guli%C3%A8re) et 
 [Anglaise](https://en.wikipedia.org/wiki/Regular_expression) est recommandée 
 pour se faire une idée générale du sujet.
 
-Le document ""[Learn
+Le document "[Learn
 Regex](https://github.com/ziishaned/learn-regex/blob/master/README-fr.md)" permet 
 d'apprendre les mécanismes pas à pas et dans la mesure du possible, cet 
 exercice essayera de suivre la progression selon ce document.
