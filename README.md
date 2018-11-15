@@ -1,6 +1,6 @@
 ---
 
-   Note: dans le monde des [coding dojo](https://fr.wikipedia.org/wiki/Coding_dojo), ceci est la donnée d'un "[kata](https://fr.wikipedia.org/wiki/Coding_dojo#Kata)" dans le sens d'un exercice de programmation. Ce document est en cours d'élaboration, toutes propositions, idées, pull request, etc... seront très appréciées.
+   Note: Dans le monde des [coding dojo](https://fr.wikipedia.org/wiki/Coding_dojo), ceci est la donnée d'un "[kata](https://fr.wikipedia.org/wiki/Coding_dojo#Kata)" dans le sens d'un exercice de programmation. Ce document est en cours d'élaboration, toutes propositions, idées, pull request, etc... seront très appréciées.
 
 ---
 
