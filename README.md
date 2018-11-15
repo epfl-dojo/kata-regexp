@@ -26,23 +26,11 @@ regex et apportent des explications utiles sur les motifs utilisés.
 
  💡 si vous avez un language de prédiléction pour appliquer des regex, utilisez-le pour ces exercices. Autrement, [regex101](https://regex101.com) est l'un des plus grand service de test de regex dans le mondre.
 
-
-## Idées
-* Nombre pairs \<\d*[02468]+\> / Impaires \<\d*[13579]+\> [src](https://www.abracadabrapdf.net/ressources-et-tutos/abracadabragrep/grep-pour-indesign-detecter-chiffres-pairs-et-impairs/)
-* Selection group ;
-* Greedy / Non-Greedy ;
-* A regular expression to check for prime numbers (noulakaz.net) https://news.ycombinator.com/item?id=9039537 / http://montreal.pm.org/tech/neil_kandalgaonkar.shtml
-* https://en.wikipedia.org/wiki/Email_address#Examples + https://hackernoon.com/the-100-correct-way-to-validate-email-addresses-7c4818f24643
-  
-# Exercices Pratiques
-
-Ces premiers exercices permettent de mieux comprendre le language des regex. Le
-fichier [dict.txt](assets/dict.txt) est à disposition pour appliquer les regexp
-proposées dans cet exercice.
-
+ 
 ## Meta caractères
 
-Significations des meta-caractères:
+Résumé des meta-caractères tiré de "[Learn
+Regex](https://github.com/ziishaned/learn-regex/blob/master/README-fr.md)":
 
 |Meta-caractère|Description|
 |:----:|----|
@@ -59,6 +47,13 @@ Significations des meta-caractères:
 |^|Coïncide avec le début de la chaîne de caractères (string).|
 |$|Coïncide avec la fin de la chaîne de caractères (string).|
 
+# Exercices Pratiques
+
+Ces premiers exercices permettent de mieux comprendre le language des regex. Le
+fichier [dict.txt](assets/dict.txt) est à disposition pour appliquer les regexp
+proposées dans cet exercice.
+
+→ But: // TODO
 
 ### Recherche de mots
   1. Trouver un moyen (et une variante) de trouver les mots de 7 lettres dans la liste
@@ -72,16 +67,22 @@ Significations des meta-caractères:
   1. ...
 
 ## Validation d'une date au format jj-mm-aaaa
+
+→ But: // TODO
+
 Comment valider une date au format jj-mm-aaaa avec une expressions régulière ?
  * Exemple de date valide: 01-02-1337
  * Exemples de dates invalides: 01.02.1337 / 31-31-1337 / 42-01-1337 / 01-01-0001 / ab-cd-efgh
 
 ## Trouver les nombres pairs et impaires
+
+→ But: // TODO
+
 Comment trouver tous les nombres pairs d'une liste ? Et impaires ?
 
 ## Validation d'un pseudo
 
-→ But: ...
+→ But: // TODO
 
 Pour la validation de l'inscription des utilisateurs sur un site internet, vous
 devez développer le code qui validera les pseudos des utilisateurs. Quelle
@@ -146,9 +147,24 @@ Pour terminer, lire (et comprendre) [comment valider à 100% une adresse email (
 * https://www.regular-expressions.info/email.html
 * https://hackernoon.com/the-100-correct-way-to-validate-email-addresses-7c4818f24643
 
+## Nombres premiers
+Pour terminer les exercices, voir "A regular expression to check for prime numbers (noulakaz.net)" : https://news.ycombinator.com/item?id=9039537 / http://montreal.pm.org/tech/neil_kandalgaonkar.shtml
+
+
+# Conclusion
+// TODO
 
 # Solutions
-Le XXX
+// TODO
+
+<details>
+  <summary>Solution "Trouver les nombres pairs et impaires"</summary>
+
+```js
+Nombre pairs \<\d*[02468]+\> / Impaires \<\d*[13579]+\> [src](https://www.abracadabrapdf.net/ressources-et-tutos/abracadabragrep/grep-pour-indesign-detecter-chiffres-pairs-et-impairs/)
+```
+</details>
+
 
 <details>
   <summary>Solution "Validation d'un pseudo"</summary>
