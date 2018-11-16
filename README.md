@@ -126,7 +126,7 @@ rechercher la bonne réponse. Quels sont les caractères autorisés dans la part
 locale, la longueur maximale d'une adresse email, les possibilités de nom de
 domaine.
 
-Cet exercice débute donc avec une série de questions :
+Cet exercice débute donc avec une série de questions (partie 1):
 
   1. Quelle est la longueur maximale de la partie locale d'une adresse email ?
   1. Quelle est la longueur maximale de la partie nom de domaine d'une adresse email ?
@@ -137,7 +137,7 @@ Cet exercice débute donc avec une série de questions :
 
 
 Pour la suite, utiliser les adresses email du fichier [email.md](assets/emails.md) 
-pour tenter de trouver la RegExp compatible avec la norme RFC des emails.
+pour tenter de trouver la RegExp compatible avec la norme RFC des emails (partie 2).
 
 Pour terminer, lire (et comprendre) [comment valider à 100% une adresse email (The 100% correct way)](https://hackernoon.com/the-100-correct-way-to-validate-email-addresses-7c4818f24643).
 
