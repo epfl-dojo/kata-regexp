@@ -7,6 +7,21 @@
 # Kata RegExp
 Kata d'exploration des expressions régulières (RegExp).
 
+* [Intro](#intro)
+* [Meta caractères](#meta-caractères)
+* [Exercices Pratiques](#exercices-pratiques)
+   * [Recherche de mots](#recherche-de-mots)
+   * [Validation d'une date au format jj-mm-aaaa](#validation-dune-date-au-format-jj-mm-aaaa)
+   * [Trouver les nombres pairs et impaires](#trouver-les-nombres-pairs-et-impaires)
+   * [Validation d'un pseudo](#validation-dun-pseudo)
+   * [Parser les liens d'une page HTML](#parser-les-liens-dune-page-html)
+   * [Validation d'email](#validation-demail)
+         * [Références](#références)
+   * [Nombres premiers](#nombres-premiers)
+* [Conclusion](#conclusion)
+* [Solutions](#solutions)
+
+
 ## Intro
 Tout comme `git` ou `bash`, les expressions régulières sont incontournables dans 
 le monde de l'informatique. Le but de cet exercice est donc d'apprendre, par la 
