@@ -70,12 +70,13 @@ Ces exercices permettent de mieux comprendre le language des regex.
 Le
 fichier [dict.txt](assets/dict.txt) est à disposition pour appliquer les regexp
 proposées dans cet exercice.
-  1. Trouver un moyen (et une variante) de trouver les mots de 7 lettres dans la liste
-  1. Trouver les mots ne commençant pas par "Ma"
-  1. Trouver les mots avec un double "aa"
+  1. Trouver les mots commençant par "M"
   1. Trouver les mots commençant par "M", finissant par "o"
   1. Trouver les mots commençant par "M", finissant par "o" et ayant un "la"
-  1. Trouver les noms ayant une majuscule dans le nom (pas uniquement au début)
+  1. Trouver les mots avec un double "aa"
+  1. Trouver un moyen (et une variante) de trouver les mots de 7 lettres dans la liste
+  1. Trouver les mots ne commençant pas par "Ma"
+  1. Trouver les termes ayant une majuscule dans le mot à partir du 2ème caractère
   1. Trouver les mots ne finissant pas par "'s"
   1. ...
   1. ...
@@ -179,7 +180,26 @@ Le but de ce kata est de découvrir et pratiquer les expressions régulières. I
 <details>
   <summary>Solution pour "Recherche de mots"</summary>
 
-  // TODO
+1. Trouver les mots commençant par "M"
+    * `^M.*`
+1. Trouver les mots commençant par "M", finissant par "o"
+    * `^M.*o$`
+1. Trouver les mots commençant par "M", finissant par "o" et ayant un "la"
+    * `^M.*(la).*o$`
+1. Trouver les mots avec un double "aa"
+    * `.*(aa).*`
+    * `^\w*(aa)\w*$`
+1. Trouver un moyen (et une variante) de trouver les mots de 7 lettres dans la liste
+    * `/......./`
+    * `/^\w{7}$/`
+    * `/^[[:alpha:]]{7}$/` ou `/^[[:word:]]{7}$/`
+    * `/^[A-Za-z]{7}$/`
+1. Trouver les mots ne commençant pas par "Ma"
+    * `^(?!Ma).*$`
+1. Trouver les termes ayant une majuscule dans le mot à partir du 2ème caractère
+    * `.[A-Z].*`
+1. Trouver les mots ne finissant pas par "'s"
+    * `.*(?<!\'s)$`
 
 </details>
 
