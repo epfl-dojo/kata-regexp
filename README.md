@@ -167,45 +167,84 @@ Pour terminer les exercices, voir "A regular expression to check for prime numbe
 
 
 # Conclusion
+
 // TODO
+
+---
+
 
 # Solutions
-// TODO
+
+Le but de ce kata est de découvrir et pratiquer les expressions régulières. Il y a bien évidemment plusieurs solutions possibles, manières de faires, plus ou moins élégantes ou adéquates pour résoudre un cas. Ci-dessous des propositions de réponse.
 
 <details>
-  <summary>Solution "Trouver les nombres pairs et impaires"</summary>
+  <summary>Solution pour "Recherche de mots"</summary>
+
+  // TODO
+
+</details>
+
+<details>
+  <summary>Solution pour "Validation d'une date au format jj-mm-aaaa"</summary>
+
+  // TODO
+
+</details>
+
+<details>
+  <summary>Solution pour "Trouver les nombres pairs et impaires"</summary>
+
+[src](https://www.abracadabrapdf.net/ressources-et-tutos/abracadabragrep/grep-pour-indesign-detecter-chiffres-pairs-et-impairs/)
 
 ```js
-Nombre pairs \<\d*[02468]+\> / Impaires \<\d*[13579]+\> [src](https://www.abracadabrapdf.net/ressources-et-tutos/abracadabragrep/grep-pour-indesign-detecter-chiffres-pairs-et-impairs/)
+Nombre pairs \<\d*[02468]+\> / Impaires \<\d*[13579]+\> 
 ```
 </details>
 
-
 <details>
-  <summary>Solution "Validation d'un pseudo"</summary>
+  <summary>Solution pour "Validation d'un pseudo"</summary>
 
-```js
-... not yet
-```
+  // TODO
+
 </details>
 
-
 <details>
-  <summary>Solution "Parser les liens d'une page HTML"</summary>
+  <summary>Solution pour "Parser les liens d'une page HTML"</summary>
+
+Voir la solution sur https://regex101.com/r/4G0JO8/2
 
 ```js
+
 \?sciper=([0-9]{1,})[^0-9]>(.*?)<\/a>
-https://regex101.com/r/4G0JO8/2
+
 ```
 </details>
 
+<details>
+  <summary>Solution pour "Validation d'email" (partie 1)</summary>
+
+1. Quelle est la longueur maximale de la partie locale d'une adresse email ?
+1. Quelle est la longueur maximale de la partie nom de domaine d'une adresse email ?
+1. Par conséquent, quelle est la longueur maximale d'une adresse email ?
+1. Et minimale ?
+1. Dans la partie nom de domaine, combien de point peut-on avoir (de ... à ...) ?
+1. Quels sont les caractères autorisés qui vous surprennent le plus dans la partie locale ?
+</details>
 
 <details>
-  <summary>Solution "Validation d'email"</summary>
+  <summary>Solution pour "Validation d'email" (partie 2)</summary>
 
 ```js
 (?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])
 
 Lire https://www.regular-expressions.info/email.html et https://hackernoon.com/the-100-correct-way-to-validate-email-addresses-7c4818f24643 !
 ```
+</details>
+
+
+<details>
+  <summary>Solution pour "Nombres premiers"</summary>
+
+  // TODO
+
 </details>
