@@ -1,8 +1,7 @@
----
+> Note: Dans le monde des <a href="https://fr.wikipedia.org/wiki/Coding_dojo">coding dojo</a>, ceci est la donnée d'un "<a href="https://fr.wikipedia.org/wiki/Coding_dojo#Kata">kata</a>" dans le sens d'un _exercice de programmation_. Il est destiné à toute personne voulant apprendre et parfaire ses connaissances sur le sujet.
+> 
+> Ce document est en cours d'élaboration, toutes propositions, idées, pull request, etc... seront très appréciées.
 
-   Note: Dans le monde des [coding dojo](https://fr.wikipedia.org/wiki/Coding_dojo), ceci est la donnée d'un "[kata](https://fr.wikipedia.org/wiki/Coding_dojo#Kata)" dans le sens d'un exercice de programmation. Ce document est en cours d'élaboration, toutes propositions, idées, pull request, etc... seront très appréciées.
-
----
 
 # Kata RegExp
 Kata d'exploration des expressions régulières (RegExp).
@@ -30,20 +29,15 @@ pratique, cet outil indispensable. Une rapide lecture des pages Wikipedia
 [Anglaise](https://en.wikipedia.org/wiki/Regular_expression) est recommandée 
 pour se faire une idée générale du sujet.
 
-Le document "[Learn
-Regex](https://github.com/ziishaned/learn-regex/blob/master/README-fr.md)" permet 
-d'apprendre les mécanismes pas à pas et dans la mesure du possible, cet 
-exercice essayera de suivre la progression selon ce document.
+Le document "[Learn Regex](https://github.com/ziishaned/learn-regex/blob/master/README-fr.md)" permet 
+d'apprendre les mécanismes pas à pas et offrira certainement une bonne source d'information pour réaliser les exercices qui suivent.
 
 Les sites comme [regex101](https://regex101.com) ou 
 [regexr.com](https://regexr.com) permettent de tester de manière visuelle les 
 regex et apportent des explications utiles sur les motifs utilisés.
 
- 💡 si vous avez un language de prédiléction pour appliquer des regex, utilisez-le pour ces exercices. Autrement, [regex101](https://regex101.com) est l'un des plus grand service de test de regex dans le monde.
-
  
 ## Meta caractères
-
 Résumé des meta-caractères tiré de "[Learn
 Regex](https://github.com/ziishaned/learn-regex/blob/master/README-fr.md)":
 
@@ -63,14 +57,19 @@ Regex](https://github.com/ziishaned/learn-regex/blob/master/README-fr.md)":
 |$|Coïncide avec la fin de la chaîne de caractères (string).|
 
 # Exercices Pratiques
+Ces exercices permettent de mieux comprendre le language des regex.
 
-Ces premiers exercices permettent de mieux comprendre le language des regex. Le
-fichier [dict.txt](assets/dict.txt) est à disposition pour appliquer les regexp
-proposées dans cet exercice.
+💡 si vous avez un language de prédiléction pour appliquer des regex, utilisez-le pour ces exercices. Autrement, [regex101](https://regex101.com), l'un des plus grand service de test de regex dans le monde, est à disposition.
+
+
+
+## Recherche de mots
 
 → But: // TODO
 
-## Recherche de mots
+Le
+fichier [dict.txt](assets/dict.txt) est à disposition pour appliquer les regexp
+proposées dans cet exercice.
   1. Trouver un moyen (et une variante) de trouver les mots de 7 lettres dans la liste
   1. Trouver les mots ne commençant pas par "Ma"
   1. Trouver les mots avec un double "aa"
