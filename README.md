@@ -55,7 +55,7 @@ proposées dans cet exercice.
 
 → But: // TODO
 
-### Recherche de mots
+## Recherche de mots
   1. Trouver un moyen (et une variante) de trouver les mots de 7 lettres dans la liste
   1. Trouver les mots ne commençant pas par "Ma"
   1. Trouver les mots avec un double "aa"
@@ -93,7 +93,7 @@ serait l'expression régulière qui permettrait de valider que :
   * le pseudo dit avoir de 3 à 15 caractères.
 
 
-### Parser les liens d'une page HTML
+## Parser les liens d'une page HTML
 
 → But: comprendre les groupes et "dealer" avec les accents
 
@@ -111,7 +111,7 @@ Quelle serait la regexp qui permettrait d'extraire, en une fois, le numéro scip
 
 Le fichier (anonymized_list.html)[anonymized_list.html] peut être utilisé comme source de donnée.
 
-### Validation d'email
+## Validation d'email
 
 → But: comprendre qu'on ne peut pas valider une chaine sans comprendre la
 définition de son format. Aborder la compléxité de la RFC 5322. 
