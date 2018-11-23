@@ -89,7 +89,7 @@ proposées dans cet exercice.
   1. Trouver les mots ne commençant pas par "Ma"
   1. Trouver les termes ayant une majuscule dans le mot à partir du 2ème caractère
   1. Trouver les mots ne finissant pas par "'s"
-  1. ...
+  1. Trouver des syntaxes alternatives à `.*` pour sélectionner des chaînes de caractères
   1. ...
 
 ## Validation d'une date au format jj-mm-aaaa
@@ -125,13 +125,14 @@ devez développer le code qui validera les pseudos des utilisateurs. Quelle
 serait l'expression régulière qui permettrait de valider que :
   * le pseudo contient que des lettres minuscules, sans caractères accentués ;
   * le pseudo peut contenir des chiffres, mais pas que des chiffres ;
-  * le pseudo peut contenir des tirets (`-`) et des tirets bas (`_`)  ;
+  * le pseudo peut contenir des tirets (`-`) et des tirets bas (`_`) ;
   * le pseudo dit avoir de 3 à 15 caractères.
 
 
 ## Parser les liens d'une page HTML
 
-→ But: comprendre les groupes et "dealer" avec les accents
+→ But: mieux comprendre les groupes de sélection et éventuellement "dealer" avec 
+les accents (e.g. avec l'utilisation de `[\w]`).
 
 Depuis la source d'une page de cadiwww (e.g.
 view-source:https://cadiwww.epfl.ch/listes?groupe=epfl-dojo), on veut générer un
@@ -224,6 +225,9 @@ Le but de ce kata est de découvrir et pratiquer les expressions régulières. I
     * `.[A-Z].*`
 1. Trouver les mots ne finissant pas par "'s"
     * `.*(?<!\'s)$`
+1. Trouver des syntaxes alternatives à `.*` pour sélectionner des chaînes de caractères
+    * Voir les [classes de caractères](https://en.wikipedia.org/wiki/Regular_expression#Character_classes)
+      * `\w`, `\W` ou encore `[:alpha:]` (Attention de bien noter les différences)
 
 </details>
 
