@@ -254,6 +254,8 @@ Nombre pairs \<\d*[02468]+\> / Impaires \<\d*[13579]+\>
   <summary>Solution pour "Validation d'un pseudo"</summary>
 
 ```js
+[a-z0-9_\-]*[a-z_\-][a-z0-9\-_]*
+
 ^(?![0-9])[a-z0-9_\-]{3,15}+
 ```
 </details>
