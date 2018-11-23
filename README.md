@@ -12,14 +12,14 @@ Kata d'exploration des expressions régulières (RegExp).
 
 * [Kata RegExp](README.md#kata-regexp)
    * [Intro](README.md#intro)
-   * [Meta caractères](README.md#meta-caractères)
-* [Exercices Pratiques](README.md#exercices-pratiques)
-   * [Recherche de mots](README.md#recherche-de-mots)
-   * [Validation d'une date au format jj-mm-aaaa](README.md#validation-dune-date-au-format-jj-mm-aaaa)
-   * [Trouver les nombres pairs et impaires](README.md#trouver-les-nombres-pairs-et-impaires)
-   * [Validation d'un pseudo](README.md#validation-dun-pseudo)
-   * [Parser les liens d'une page HTML](README.md#parser-les-liens-dune-page-html)
-   * [Validation d'email](README.md#validation-demail)
+   * [Méta-caractères](README.md#meta-caractères)
+   * [Exercices Pratiques](README.md#exercices-pratiques)
+      * [Recherche de mots](README.md#recherche-de-mots)
+      * [Validation d'une date au format jj-mm-aaaa](README.md#validation-dune-date-au-format-jj-mm-aaaa)
+      * [Trouver les nombres pairs et impaires](README.md#trouver-les-nombres-pairs-et-impaires)
+      * [Validation d'un pseudo](README.md#validation-dun-pseudo)
+      * [Parser les liens d'une page HTML](README.md#parser-les-liens-dune-page-html)
+      * [Validation d'e-mail](README.md#validation-de-mail)
          * [Références](README.md#références)
    * [Nombres premiers](README.md#nombres-premiers)
 * [Conclusion](README.md#conclusion)
@@ -43,11 +43,11 @@ Les sites comme [regex101](https://regex101.com) ou
 regex et apportent des explications utiles sur les motifs utilisés.
 
 
-## Meta caractères
-Résumé des meta-caractères tiré de "[Learn
+## Méta-caractères
+Résumé des méta-caractères tiré de "[Learn
 Regex](https://github.com/ziishaned/learn-regex/blob/master/README-fr.md)":
 
-|Meta-caractère|Description|
+|Méta-caractère|Description|
 |:----:|----|
 |.|Un point coïncide avec n'importe quel caractère unique à part le retour à la ligne.|
 |[ ]|Classe de caractères. Coïncide avec n'importe quel caractère entre crochets.|
@@ -63,9 +63,9 @@ Regex](https://github.com/ziishaned/learn-regex/blob/master/README-fr.md)":
 |$|Coïncide avec la fin de la chaîne de caractères (string).|
 
 # Exercices Pratiques
-Ces exercices permettent de mieux comprendre le language des regex.
+Ces exercices permettent de mieux comprendre le langage des regex.
 
-💡 si vous avez un language de prédiléction pour appliquer des regex, utilisez-le 
+💡 si vous avez un langage de prédilection pour appliquer des regex, utilisez-le 
 pour ces exercices. Autrement, [regex101](https://regex101.com), l'un des plus 
 grand service de test de regex dans le monde, est à disposition.
 
@@ -74,7 +74,7 @@ grand service de test de regex dans le monde, est à disposition.
 ## Recherche de mots
 
 → But: Le but de cet exercice est de se familiariser avec les outils et les 
-meta-caractères cités ci-dessus.
+méta-caractères cités ci-dessus.
 
 💡 Note: pour avoir expérimenté cette partie lors d'un dojo, cette partie est
 à revoir car les derniers points peuvent se réveler très complexes.
@@ -119,7 +119,8 @@ Comment trouver tous les nombres pairs d'une liste ? Et impaires ?
 
 ## Validation d'un pseudo
 
-→ But: // TODO
+→ But: experimenter un cas concret de validation de pseudo. A noter que le 
+"mais pas que des chiffres" peut être compliqué.
 
 Pour la validation de l'inscription des utilisateurs sur un site internet, vous
 devez développer le code qui validera les pseudos des utilisateurs. Quelle
@@ -150,35 +151,35 @@ Quelle serait la regexp qui permettrait d'extraire, en une fois, le numéro scip
 Le fichier [anonymized_list.html](anonymized_list.html) peut être utilisé comme source
 de donnée si pas d'accès au site "cadiwww".
 
-## Validation d'email
+## Validation d'e-mail
 
 → But: comprendre qu'on ne peut pas valider une chaine sans comprendre la
-définition de son format. Aborder la compléxité de la RFC 5322.
+définition de son format. Aborder la complexité de la RFC 5322.
 
 > `Note there is no perfect email regex, hence the 99.99%.` (https://emailregex.com)
 
-Beaucoup d'applications doivent gérer des emails, les stocker ou les valider.
-Lors qu'on demande dans quel type de champs on devrait stocker un email dans une
+Beaucoup d'applications doivent gérer des e-mails, les stocker ou les valider.
+Lors qu'on demande dans quel type de champs on devrait stocker un e- dans une
 base de donnée à un apprenant, on se rend vite compte que la plupart ont estimé
-"à la louche" ce que pourrait contenir les adresses email et ne savent pas où
+"à la louche" ce que pourrait contenir les adresses e-mail et ne savent pas où
 rechercher la bonne réponse. Quels sont les caractères autorisés dans la partie
-locale, la longueur maximale d'une adresse email, les possibilités de nom de
+locale, la longueur maximale d'une adresse e-mail, les possibilités de nom de
 domaine.
 
 Cet exercice débute donc avec une série de questions (partie 1):
 
-  1. Quelle est la longueur maximale de la partie locale d'une adresse email ?
-  1. Quelle est la longueur maximale de la partie nom de domaine d'une adresse email ?
-  1. Par conséquent, quelle est la longueur maximale d'une adresse email ?
+  1. Quelle est la longueur maximale de la partie locale d'une adresse e-mail ?
+  1. Quelle est la longueur maximale de la partie nom de domaine d'une adresse e-mail ?
+  1. Par conséquent, quelle est la longueur maximale d'une adresse e-mail ?
   1. Et minimale ?
   1. Dans la partie nom de domaine, combien de point peut-on avoir (de ... à ...) ?
   1. Quels sont les caractères autorisés qui vous surprennent le plus dans la partie locale ?
 
 
-Pour la suite, utiliser les adresses email du fichier [email.md](assets/emails.md)
-pour tenter de trouver la RegExp compatible avec la norme RFC des emails (partie 2).
+Pour la suite, utiliser les adresses e-mail du fichier [email.md](assets/emails.md)
+pour tenter de trouver la RegExp compatible avec la norme RFC des e-mails (partie 2).
 
-Pour terminer, lire (et comprendre) [comment valider à 100% une adresse email (The 100% correct way)](https://hackernoon.com/the-100-correct-way-to-validate-email-addresses-7c4818f24643).
+Pour terminer, lire (et comprendre) [comment valider à 100% une adresse e-mail (The 100% correct way)](https://hackernoon.com/the-100-correct-way-to-validate-email-addresses-7c4818f24643).
 
 #### Références
 * https://en.wikipedia.org/wiki/Email_address#Examples
@@ -272,23 +273,23 @@ curl https://cadiwww.epfl.ch/listes\?groupe\=epfl-dojo | perl -ne  '/sciper=(.+)
 </details>
 
 <details>
-  <summary>Solution pour "Validation d'email" (partie 1)</summary>
+  <summary>Solution pour "Validation d'e-mail" (partie 1)</summary>
 
-1. Quelle est la longueur maximale de la partie locale d'une adresse email ?
-1. Quelle est la longueur maximale de la partie nom de domaine d'une adresse email ?
-1. Par conséquent, quelle est la longueur maximale d'une adresse email ?
+1. Quelle est la longueur maximale de la partie locale d'une adresse e-mail ?
+1. Quelle est la longueur maximale de la partie nom de domaine d'une adresse e-mail ?
+1. Par conséquent, quelle est la longueur maximale d'une adresse e-mail ?
 1. Et minimale ?
 1. Dans la partie nom de domaine, combien de point peut-on avoir (de ... à ...) ?
 1. Quels sont les caractères autorisés qui vous surprennent le plus dans la partie locale ?
 </details>
 
 <details>
-  <summary>Solution pour "Validation d'email" (partie 2)</summary>
+  <summary>Solution pour "Validation d'e-mail" (partie 2)</summary>
 
 ```js
 (?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])
 
-Lire https://www.regular-expressions.info/email.html et https://hackernoon.com/the-100-correct-way-to-validate-email-addresses-7c4818f24643 !
+Lire https://www.regular-expressions.info/email.html et https://hackernoon.com/the-100-correct-way-to-validate-e-mail-addresses-7c4818f24643 !
 ```
 </details>
 
