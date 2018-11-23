@@ -94,7 +94,10 @@ proposées dans cet exercice.
 
 ## Validation d'une date au format jj-mm-aaaa
 
-→ But: // TODO
+→ But: cet exercice permet de mettre en pratique une RegExp de validation de 
+chaîne de caractère, en l'occurence, une [date au format Français](https://fr.wikipedia.org/wiki/Date#Pays_utilisant_le_format_jj/mm/aaaa)
+ non [ISO 8601](https://fr.wikipedia.org/wiki/ISO_8601) .
+
 
 Comment valider une date au format jj-mm-aaaa avec une expressions régulière ?
  * Exemple de date valide: 01-02-1337
@@ -102,7 +105,8 @@ Comment valider une date au format jj-mm-aaaa avec une expressions régulière ?
 
 ## Trouver les nombres pairs et impaires
 
-→ But: // TODO
+→ But: manipuler les aspects appris jusqu'ici pour trouver comment identifier 
+des nombres pairs et impaires.
 
 Comment trouver tous les nombres pairs d'une liste ? Et impaires ?
 
