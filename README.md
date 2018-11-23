@@ -10,19 +10,20 @@
 # Kata RegExp
 Kata d'exploration des expressions régulières (RegExp).
 
-* [Intro](#intro)
-* [Meta caractères](#meta-caractères)
-* [Exercices Pratiques](#exercices-pratiques)
-  * [Recherche de mots](#recherche-de-mots)
-  * [Validation d'une date au format jj-mm-aaaa](#validation-dune-date-au-format-jj-mm-aaaa)
-  * [Trouver les nombres pairs et impaires](#trouver-les-nombres-pairs-et-impaires)
-  * [Validation d'un pseudo](#validation-dun-pseudo)
-  * [Parser les liens d'une page HTML](#parser-les-liens-dune-page-html)
-  * [Validation d'email](#validation-demail)
-    * [Références](#références)
-  * [Nombres premiers](#nombres-premiers)
-* [Conclusion](#conclusion)
-* [Solutions](#solutions)
+* [Kata RegExp](README.md#kata-regexp)
+   * [Intro](README.md#intro)
+   * [Meta caractères](README.md#meta-caractères)
+* [Exercices Pratiques](README.md#exercices-pratiques)
+   * [Recherche de mots](README.md#recherche-de-mots)
+   * [Validation d'une date au format jj-mm-aaaa](README.md#validation-dune-date-au-format-jj-mm-aaaa)
+   * [Trouver les nombres pairs et impaires](README.md#trouver-les-nombres-pairs-et-impaires)
+   * [Validation d'un pseudo](README.md#validation-dun-pseudo)
+   * [Parser les liens d'une page HTML](README.md#parser-les-liens-dune-page-html)
+   * [Validation d'email](README.md#validation-demail)
+         * [Références](README.md#références)
+   * [Nombres premiers](README.md#nombres-premiers)
+* [Conclusion](README.md#conclusion)
+* [Solutions](README.md#solutions)
 
 
 ## Intro
