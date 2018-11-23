@@ -124,7 +124,8 @@ fichier JSON sous la forme:
 
 Quelle serait la regexp qui permettrait d'extraire, en une fois, le numéro sciper et le nom de la personne ?
 
-Le fichier (anonymized_list.html)[anonymized_list.html] peut être utilisé comme source de donnée.
+Le fichier [anonymized_list.html](anonymized_list.html) peut être utilisé comme source
+de donnée si pas d'accès au site "cadiwww".
 
 ## Validation d'email
 
