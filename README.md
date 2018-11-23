@@ -235,9 +235,11 @@ Le but de ce kata est de découvrir et pratiquer les expressions régulières. I
 
 <details>
   <summary>Solution pour "Validation d'une date au format jj-mm-aaaa"</summary>
+  
+  ```js
+([0-3][0-9])\/([0-1][0-9])\/([0-9]+)
 
-  // TODO
-
+```
 </details>
 
 <details>
