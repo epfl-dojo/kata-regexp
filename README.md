@@ -97,7 +97,7 @@ proposées dans cet exercice.
 
 → But: cet exercice permet de mettre en pratique une RegExp de validation de 
 chaîne de caractère, en l'occurence, une [date au format Français](https://fr.wikipedia.org/wiki/Date#Pays_utilisant_le_format_jj/mm/aaaa)
- non [ISO 8601](https://fr.wikipedia.org/wiki/ISO_8601) .
+ non [ISO 8601](https://fr.wikipedia.org/wiki/ISO_8601).
 
 
 Comment valider une date au format jj/mm/aaaa avec une expressions régulière ?
@@ -253,8 +253,9 @@ Nombre pairs \<\d*[02468]+\> / Impaires \<\d*[13579]+\>
 <details>
   <summary>Solution pour "Validation d'un pseudo"</summary>
 
-  // TODO
-
+```js
+^(?![0-9])[a-z0-9_\-]{3,15}+
+```
 </details>
 
 <details>
