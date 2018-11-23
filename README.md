@@ -1,5 +1,5 @@
 > Note: Dans le monde des <a href="https://fr.wikipedia.org/wiki/Coding_dojo">coding dojo</a>, ceci est la donnée d'un "<a href="https://fr.wikipedia.org/wiki/Coding_dojo#Kata">kata</a>" dans le sens d'un _exercice de programmation_. Il est destiné à toute personne voulant apprendre et parfaire ses connaissances sur le sujet.
-> 
+>
 > Ce document est en cours d'élaboration, toutes propositions, idées, pull request, etc... seront très appréciées.
 
 
@@ -22,21 +22,21 @@ Kata d'exploration des expressions régulières (RegExp).
 
 
 ## Intro
-Tout comme `git` ou `bash`, les expressions régulières sont incontournables dans 
-le monde de l'informatique. Le but de cet exercice est donc d'apprendre, par la 
-pratique, cet outil indispensable. Une rapide lecture des pages Wikipedia 
-[Française](https://fr.wikipedia.org/wiki/Expression_r%C3%A9guli%C3%A8re) et 
-[Anglaise](https://en.wikipedia.org/wiki/Regular_expression) est recommandée 
+Tout comme `git` ou `bash`, les expressions régulières sont incontournables dans
+le monde de l'informatique. Le but de cet exercice est donc d'apprendre, par la
+pratique, cet outil indispensable. Une rapide lecture des pages Wikipedia
+[Française](https://fr.wikipedia.org/wiki/Expression_r%C3%A9guli%C3%A8re) et
+[Anglaise](https://en.wikipedia.org/wiki/Regular_expression) est recommandée
 pour se faire une idée générale du sujet.
 
-Le document "[Learn Regex](https://github.com/ziishaned/learn-regex/blob/master/README-fr.md)" permet 
+Le document "[Learn Regex](https://github.com/ziishaned/learn-regex/blob/master/README-fr.md)" permet
 d'apprendre les mécanismes pas à pas et offrira certainement une bonne source d'information pour réaliser les exercices qui suivent.
 
-Les sites comme [regex101](https://regex101.com) ou 
-[regexr.com](https://regexr.com) permettent de tester de manière visuelle les 
+Les sites comme [regex101](https://regex101.com) ou
+[regexr.com](https://regexr.com) permettent de tester de manière visuelle les
 regex et apportent des explications utiles sur les motifs utilisés.
 
- 
+
 ## Meta caractères
 Résumé des meta-caractères tiré de "[Learn
 Regex](https://github.com/ziishaned/learn-regex/blob/master/README-fr.md)":
@@ -122,20 +122,20 @@ fichier JSON sous la forme:
 }
 ```
 
-Quelle serait la regexp qui permettrait d'extraire, en une fois, le numéro sciper et le nom de la personne ? 
+Quelle serait la regexp qui permettrait d'extraire, en une fois, le numéro sciper et le nom de la personne ?
 
 Le fichier (anonymized_list.html)[anonymized_list.html] peut être utilisé comme source de donnée.
 
 ## Validation d'email
 
 → But: comprendre qu'on ne peut pas valider une chaine sans comprendre la
-définition de son format. Aborder la compléxité de la RFC 5322. 
+définition de son format. Aborder la compléxité de la RFC 5322.
 
 > `Note there is no perfect email regex, hence the 99.99%.` (https://emailregex.com)
 
 Beaucoup d'applications doivent gérer des emails, les stocker ou les valider.
 Lors qu'on demande dans quel type de champs on devrait stocker un email dans une
-base de donnée à un apprenant, on se rend vite compte que la plupart ont estimé 
+base de donnée à un apprenant, on se rend vite compte que la plupart ont estimé
 "à la louche" ce que pourrait contenir les adresses email et ne savent pas où
 rechercher la bonne réponse. Quels sont les caractères autorisés dans la partie
 locale, la longueur maximale d'une adresse email, les possibilités de nom de
@@ -151,7 +151,7 @@ Cet exercice débute donc avec une série de questions (partie 1):
   1. Quels sont les caractères autorisés qui vous surprennent le plus dans la partie locale ?
 
 
-Pour la suite, utiliser les adresses email du fichier [email.md](assets/emails.md) 
+Pour la suite, utiliser les adresses email du fichier [email.md](assets/emails.md)
 pour tenter de trouver la RegExp compatible avec la norme RFC des emails (partie 2).
 
 Pour terminer, lire (et comprendre) [comment valider à 100% une adresse email (The 100% correct way)](https://hackernoon.com/the-100-correct-way-to-validate-email-addresses-7c4818f24643).
@@ -216,7 +216,7 @@ Le but de ce kata est de découvrir et pratiquer les expressions régulières. I
 [src](https://www.abracadabrapdf.net/ressources-et-tutos/abracadabragrep/grep-pour-indesign-detecter-chiffres-pairs-et-impairs/)
 
 ```js
-Nombre pairs \<\d*[02468]+\> / Impaires \<\d*[13579]+\> 
+Nombre pairs \<\d*[02468]+\> / Impaires \<\d*[13579]+\>
 ```
 </details>
 
@@ -235,6 +235,9 @@ Voir la solution sur https://regex101.com/r/4G0JO8/2
 ```js
 
 \?sciper=([0-9]{1,})[^0-9]>(.*?)<\/a>
+
+curl https://cadiwww.epfl.ch/listes\?groupe\=epfl-dojo | perl -ne  '/sciper=(.+)\">(.+)<\/a>/ && print "${1} ${2}\n"'
+
 
 ```
 </details>
