@@ -99,9 +99,15 @@ chaîne de caractère, en l'occurence, une [date au format Français](https://fr
  non [ISO 8601](https://fr.wikipedia.org/wiki/ISO_8601) .
 
 
-Comment valider une date au format jj-mm-aaaa avec une expressions régulière ?
- * Exemple de date valide: 01-02-1337
- * Exemples de dates invalides: 01.02.1337 / 31-31-1337 / 42-01-1337 / 01-01-0001 / ab-cd-efgh
+Comment valider une date au format jj/mm/aaaa avec une expressions régulière ?
+ * Exemple de date valide: 01/02/2020
+ * Exemples de dates invalides: 
+    * 01.02.1337 `// séparateurs . plutôt que /`
+    * 01-02-1337 `// séparateurs - plutôt que /`
+    * 42/01/1337 `// jour impossible`
+    * 31/31/1337 `// mois impossible`
+    * 01/1/0001  `// mois sur 1 digit`
+    * ab/cd/efgh `// caractères impossible`
 
 ## Trouver les nombres pairs et impaires
 
