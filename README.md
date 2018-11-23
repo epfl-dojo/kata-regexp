@@ -80,6 +80,7 @@ meta-caractères cités ci-dessus.
 
 Le fichier [dict.txt](assets/dict.txt) est à disposition pour appliquer les regexp
 proposées dans cet exercice.
+  1. Trouver la ligne contenant le mot "Malagasy"
   1. Trouver les mots commençant par "M"
   1. Trouver les mots commençant par "M", finissant par "o"
   1. Trouver les mots commençant par "M", finissant par "o" et ayant un "la"
@@ -191,6 +192,8 @@ Le but de ce kata est de découvrir et pratiquer les expressions régulières. I
 <details>
   <summary>Solution pour "Recherche de mots"</summary>
 
+1. Trouver la ligne contenant "Malagasy"
+    * `Malagasy`
 1. Trouver les mots commençant par "M"
     * `^M.*`
 1. Trouver les mots commençant par "M", finissant par "o"
