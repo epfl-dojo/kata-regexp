@@ -1,14 +1,27 @@
-> Note: Dans le monde des <a href="https://fr.wikipedia.org/wiki/Coding_dojo">coding dojo</a>,
-> ceci est la donnée d'un "<a href="https://fr.wikipedia.org/wiki/Coding_dojo#Kata">kata</a>"
-> dans le sens d'un _exercice de programmation_. Il est destiné à toute personne 
-> voulant apprendre et parfaire ses connaissances sur le sujet.
->
-> Ce document est en cours d'élaboration, toutes propositions, idées, pull request, 
-> etc... seront très appréciées.
-
-
 # Kata RegExp
+
 Kata d'exploration des expressions régulières (RegExp).
+
+> **À propos**
+>
+> ⓘ Ceci est la donnée d'un [kata], un _exercice de programmation_ qui se
+> déroule généralement dans le cadre d'un [coding dojo]. Il est proposé aux
+> membres du dojo de l'[EPFL] et fait partie d'une collection de différents
+> katas identifiés par le tag [epfl-dojo-kata] sur GitHub. Vous êtes plus que
+> bienvenu d'essayer de le réaliser dans le langage de programmation de votre
+> choix. Pour cela, un bon point de départ pour cela est de [forker] ce
+> repository. Le «[stargazer]» en lui ajoutant une **☆** nous fait également
+> très plaisir. Finalement, n'hésitez pas à l'améliorer en faisant des
+> [pull requests]. Bonne lecture !
+
+[kata]: https://fr.wikipedia.org/wiki/Coding_dojo#Kata
+[coding dojo]: https://fr.wikipedia.org/wiki/Coding_dojo
+[EPFL]: https://www,epfl.ch
+[epfl-dojo-kata]: https://github.com/topics/epfl-dojo-kata
+[forker]: https://docs.github.com/en/get-started/quickstart/fork-a-repo#forking-a-repository
+[stargazer]: https://docs.github.com/en/get-started/exploring-projects-on-github/saving-repositories-with-stars
+[pull requests]: https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request#creating-the-pull-request
+
 
 * [Kata RegExp](README.md#kata-regexp)
    * [Intro](README.md#intro)
@@ -255,9 +268,13 @@ Nombre pairs \<\d*[02468]+\> / Impaires \<\d*[13579]+\>
 <details>
   <summary>Solution pour "Validation d'un pseudo"</summary>
 
+Note: cette solution marche si on ne limite pas le nombre minimum et maximum de
+caractères dans le pseudo:
 ```js
 [a-z0-9_\-]*[a-z_\-][a-z0-9\-_]*
+```
 
+```js
 ^(?![0-9])[a-z0-9_\-]{3,15}+
 ```
 </details>
